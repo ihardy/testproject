@@ -1,0 +1,23 @@
+{
+  "name": "testproject",
+  "version": "0.0.1",
+  "description": "test for ci",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihardy/testproject.git"
+  },
+  "keywords": [
+    "dummy",
+    "project"
+  ],
+  "author": "ian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ihardy/testproject/issues"
+  },
+  "homepage": "https://github.com/ihardy/testproject#readme"
+}
