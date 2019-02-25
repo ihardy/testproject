@@ -1,9 +1,14 @@
 pipeline {
-    agent { docker { image 'node:8' } }
+    agent { docker { image 'node:8-alpine' } }
+
+    environment {
+        TEST_VAR = 'a_test_env_var'
+    }
+
     stages {
         stage('build') {
             steps {
-                sh 'echo "multistep test"'
+                sh 'printenv'
                 sh 'npm --version'
             }
         }
