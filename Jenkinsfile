@@ -6,13 +6,9 @@ pipeline {
     }
 
     stages {
-        stage('build') {
-            steps {
-                sh 'yarn install'
-            }
-        }
-        stage('Check yarn.lock for stripes-* duplicates') {
-          def yarnLock = new File(yarnLockFile)
+        stage('steps') {
+          sh 'yarn install'
+          def yarnLock = new File('yarn.lock')
           def lines = yarnLock.readLines()
           def stripesPkgs = []
         
